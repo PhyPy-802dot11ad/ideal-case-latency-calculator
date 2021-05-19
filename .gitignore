@@ -1,0 +1,7 @@
+.idea/
+__pycache__/
+
+# Ignore all output, except for figure used in readme
+*.png
+*.csv
+!Single-mpdu-latency.png
