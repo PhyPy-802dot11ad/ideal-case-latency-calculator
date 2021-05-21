@@ -49,7 +49,8 @@ ax.set_zlabel('Latency per additional A-PPDU (ms)', labelpad=10, fontsize=14)
 
 ax.set_title(f'Latency span: {round(Z.min(),3)}~{round(Z.max(),3)} ms', fontsize=20)
 
-plt.show()
+plt.savefig('Multi-mpdu-latency.png')
+# plt.show()
 
 
 fig = plt.figure(figsize=(10,6))
@@ -69,4 +70,5 @@ ax.plot( y, Z[:,-1], color='C0', lw=2, zorder=3 )
 ax.set_xlabel(r'Number of A-PPDUs', labelpad=10, fontsize=14)
 ax.set_ylabel('Latency per additional A-PPDU (ms)', labelpad=10, fontsize=14)
 
+plt.savefig('Multi-mpdu-latency-min-max.png')
 plt.show()

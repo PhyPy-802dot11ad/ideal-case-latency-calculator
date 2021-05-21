@@ -26,5 +26,5 @@ def get_payload_size(MPDU_length_bytes, modulation_rate, code_rate):
 def get_relevant_MCS_df():
     df = pd.read_csv('MCS_table.csv')
     df = df.drop( df.index[df['Repetition'] != 1] )
-    df = df.drop( df.index[df['Code_rate'] == 0.8125] )
+    df = df.drop( df.index[df['Code_rate'] == 0.875] )
     return df
