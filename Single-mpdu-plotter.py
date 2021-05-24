@@ -69,7 +69,7 @@ ax.set_zlabel('Latency per additional KB (ms)', labelpad=10, fontsize=14)
 
 ax.set_title(f'Latency span: {round(Z.min(),3)}~{round(Z.max(),3)} ms', fontsize=20)
 
-plt.savefig('Multi-mpdu-latency.png')
+plt.savefig('Single-mpdu-latency.png')
 plt.show()
 
 
@@ -90,5 +90,5 @@ ax.plot( y, Z[:,-1], color='C0', lw=2, zorder=3 )
 ax.set_xlabel(r'MPDU size (KB)', labelpad=10, fontsize=14)
 ax.set_ylabel('Latency per additional KB (ms)', labelpad=10, fontsize=14)
 
-plt.savefig('Multi-mpdu-latency-min-max.png')
+plt.savefig('Single-mpdu-latency-min-max.png')
 plt.show()
